@@ -1,0 +1,45 @@
+    app:
+        name: MySQL
+        code: mysql
+        notify: appzdev@cloudbourne.co
+
+    build:
+        version: 5.7
+        env: DEV
+        build_file: none
+        output_files: output/*.zip
+        image_template: mysql-5.7
+        image_name: alpha/mysql
+
+    deploy:
+        context: alpha/DEV
+        type: statefulset
+        replicas: 1
+        port:
+        - 3306
+
+    volumes:
+      - claim: mysql-data
+        mount: /appz/data
+        name: data
+        size: 10Gi
+        class: microk8s-hostpath
+        mode: ReadWriteOnce
+        
+    monitor:
+        notify: appzops@cloudbourne.co
+
+    properties:
+        MYSQL_CONNECTIONDB: mysql
+        MYSQL_CONNECTUSER: root
+        MYSQL_PASSWORD:
+          vault: MYSQL_PASSWORD_KEY
+        ACCOUNTS_MYSQL_PASSWORD:
+          vault: ACCOUNTS_MYSQL_PASSWORD
+        MONITOR_MYSQL_PASSWORD:
+          vault: MONITOR_MYSQL_PASSWORD
+        WEBDAV_APPZ_PASSWORD:
+          vault: WEBDAV_APPZ_PASSWORD
+        MYSQL_ROOT_PASSWORD:
+          vault: MYSQL_ROOT_PASSWORD_KEY
+        revision : 25
