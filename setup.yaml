@@ -1,0 +1,41 @@
+users:
+  - name: wordpress
+    password: $MYSQL_PASSWORD
+
+  - name: accounts
+    password: $ACCOUNTS_MYSQL_PASSWORD
+
+  - name: monitor
+    password: $MONITOR_MYSQL_PASSWORD
+
+databases:
+  - name: wordpress
+  - name: accounts
+
+acl:
+  - database: wordpress
+    user: wordpress
+    access: ALL
+
+  - database: accounts
+    user: accounts
+    access: ALL
+
+  - database: wordpress
+    user: monitor
+    access: SELECT
+
+  - database: accounts
+    user: monitor
+    access: SELECT
+
+restore:
+
+  - database: wordpress
+    source:
+       url: 'https://13.59.113.118/wp-content/uploads/2020/11/wp-dump-3.zip'
+       user: 'pradeep'
+       password: $WEBDAV_APPZ_PASSWORD
+    user: root
+    password: $MYSQL_ROOT_PASSWORD  # password of the 'user' above.
+    token:  20201104-1258 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
