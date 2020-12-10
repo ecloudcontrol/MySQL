@@ -1,14 +1,14 @@
 
 users:
-  - name: sprintboot-web
+  - name: springboot-web
     password: $MYSQL_SPRINGBOOTWEB_PASSWORD
     
 databases:
-  - name: sprintboot_web
+  - name: springboot_web
   
 acl:
-  - database: sprintboot_web
-    user: sprintboot-web
+  - database: springboot_web
+    user: springboot-web
     access: ALL
     
 restore:
