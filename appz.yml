@@ -7,7 +7,7 @@
         version: 5.7
         env: DEV
         build_file: none
-        output_files: webapps/*.zip
+        output_files: output/*.zip
         image_template: mysql-5.7
         image_name: alpha/mysql
 
