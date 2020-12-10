@@ -1,0 +1,4 @@
+[mysqld]
+key_buffer_size=16M
+max_allowed_packet=128M
+connect_timeout=2
