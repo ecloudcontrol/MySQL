@@ -17,4 +17,4 @@ restore:
        url: 'https://www.ecloudcontrol.com/wp-content/uploads/2020/12/accountdb_20201210.zip'
     user: root
     password: $MYSQL_ROOT_PASSWORD  # password of the 'user' above.
-    token:  20201209-2010 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
+    token:  20201210-2205 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
