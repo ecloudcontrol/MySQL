@@ -1,41 +1,20 @@
+
 users:
-  - name: wordpress
-    password: $MYSQL_PASSWORD
-
-  - name: accounts
-    password: $ACCOUNTS_MYSQL_PASSWORD
-
-  - name: monitor
-    password: $MONITOR_MYSQL_PASSWORD
-
+  - name: sprintboot-web
+    password: $MYSQL_SPRINGBOOTWEB_PASSWORD
+    
 databases:
-  - name: wordpress
-  - name: accounts
-
+  - name: sprintboot_web
+  
 acl:
-  - database: wordpress
-    user: wordpress
+  - database: sprintboot_web
+    user: sprintboot-web
     access: ALL
-
-  - database: accounts
-    user: accounts
-    access: ALL
-
-  - database: wordpress
-    user: monitor
-    access: SELECT
-
-  - database: accounts
-    user: monitor
-    access: SELECT
-
+    
 restore:
-
-  - database: wordpress
+  - database: springboot_web
     source:
-       url: 'https://13.59.113.118/wp-content/uploads/2020/11/wp-dump-3.zip'
-       user: 'pradeep'
-       password: $WEBDAV_APPZ_PASSWORD
+       url: 'https://www.ecloudcontrol.com/wp-content/uploads/2020/12/accountdb_20201210.zip'
     user: root
     password: $MYSQL_ROOT_PASSWORD  # password of the 'user' above.
-    token:  20201104-1258 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
+    token:  20201209-2010 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
