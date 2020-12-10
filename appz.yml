@@ -30,16 +30,7 @@
         notify: appzops@cloudbourne.co
 
     properties:
-        MYSQL_CONNECTIONDB: mysql
-        MYSQL_CONNECTUSER: root
-        MYSQL_PASSWORD:
-          vault: MYSQL_PASSWORD_KEY
-        ACCOUNTS_MYSQL_PASSWORD:
-          vault: ACCOUNTS_MYSQL_PASSWORD
-        MONITOR_MYSQL_PASSWORD:
-          vault: MONITOR_MYSQL_PASSWORD
-        WEBDAV_APPZ_PASSWORD:
-          vault: WEBDAV_APPZ_PASSWORD
         MYSQL_ROOT_PASSWORD:
           vault: MYSQL_ROOT_PASSWORD_KEY
         revision : 25
+        nano: 64
