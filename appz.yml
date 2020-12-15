@@ -20,9 +20,15 @@
 
     volumes:
       - claim: mysql-data
-        mount: /appz/data
+        mount: /var/lib/mysql
         name: data
-        size: 10Gi
+        size: 5Gi
+        class: microk8s-hostpath
+        mode: ReadWriteOnce
+      - claim: mysql-backup
+        mount: /appz/backup
+        name: backup
+        size: 5Gi
         class: microk8s-hostpath
         mode: ReadWriteOnce
         
