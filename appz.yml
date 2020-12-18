@@ -38,7 +38,7 @@
     properties:
         MYSQL_ROOT_PASSWORD:
           vault: MYSQL_ROOT_PASSWORD_KEY
-        MYSQL_WORDPRESSWEB_PASSWORD:
-          vault: MYSQL_WORDPRESSWEB_PASSWORD
+        MYSQL_SPRINGBOOTWEB_PASSWORD:
+          vault: MYSQL_SPRINGBOOTWEB_PASSWORD
         revision : 24
         nano: 67
