@@ -1,18 +1,18 @@
 
 users:
-  - name: springboot-web
-    password: $MYSQL_SPRINGBOOTWEB_PASSWORD
+  - name: wordpress-web
+    password: $MYSQL_WORDPRESS_PASSWORD
     
 databases:
-  - name: springboot_web
+  - name: wordpress_web
   
 acl:
-  - database: springboot_web
-    user: springboot-web
+  - database: wordpress_web
+    user: wordpress-web
     access: ALL
     
 restore:
-  - database: springboot_web
+  - database: wordpress_web
     source:
        url: 'https://www.ecloudcontrol.com/wp-content/uploads/2020/12/accountdb_20201210.zip'
     user: root
