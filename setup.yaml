@@ -1,7 +1,7 @@
 
 users:
   - name: wordpress-web
-    password: $MYSQL_WORDPRESS_PASSWORD
+    password: $MYSQL_WORDPRESSWEB_PASSWORD
     
 databases:
   - name: wordpress_web
