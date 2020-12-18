@@ -40,5 +40,5 @@
           vault: MYSQL_ROOT_PASSWORD_KEY
         MYSQL_WORDPRESSWEB_PASSWORD:
           vault: MYSQL_WORDPRESSWEB_PASSWORD
-        revision : 25
+        revision : 24
         nano: 67
