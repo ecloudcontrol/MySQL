@@ -31,9 +31,6 @@
         size: 5Gi
         class: microk8s-hostpath
         mode: ReadWriteOnce
-        
-    monitor:
-        notify: appzops@cloudbourne.co
 
     properties:
         MYSQL_ROOT_PASSWORD:
