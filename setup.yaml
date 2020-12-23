@@ -2,14 +2,20 @@
 users:
   - name: springboot-web
     password: $MYSQL_SPRINGBOOTWEB_PASSWORD
+  - name: wordpress
+    password: $MYSQL_WORDPRESS_PASSWORD
     
 databases:
   - name: springboot_web
+  - name: wordpress
   
 acl:
   - database: springboot_web
     user: springboot-web
     access: ALL
+  - database: wordpress
+    user: wordpress
+    access: ALL  
     
 restore:
   - database: springboot_web
