@@ -39,5 +39,5 @@
           vault: MYSQL_SPRINGBOOTWEB_PASSWORD
         MYSQL_WORDPRESS_PASSWORD:
           vault: MYSQL_WORDPRESS_PASSWORD
-revision : 24
+        revision : 24
         nano: 69
