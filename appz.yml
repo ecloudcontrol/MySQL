@@ -22,14 +22,10 @@
         mount: /var/lib/mysql
         name: data
         size: 5Gi
-        class: microk8s-hostpath
-        mode: ReadWriteOnce
       - claim: mysql-backup
         mount: /appz/backup
         name: backup
         size: 5Gi
-        class: microk8s-hostpath
-        mode: ReadWriteOnce
 
     properties:
         MYSQL_ROOT_PASSWORD:
@@ -39,4 +35,3 @@
         MYSQL_WORDPRESS_PASSWORD:
           vault: MYSQL_WORDPRESS_PASSWORD
         revision : 24
-        nano: 69
