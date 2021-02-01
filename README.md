@@ -17,7 +17,7 @@ This stack creates MySQL Database using Gitops.
 [Gitops](https://www.ecloudcontrol.com/category/gitops/)
 
 ## Documentation: How to use MySQL stack
-[MariaDB Master](https://docs.ecloudcontrol.com/mysql-5.7/)
+[MySQL](https://docs.ecloudcontrol.com/mysql-5.7/)
 
 ## Learn more about AppZ Platform and Stacks
 https://www.ecloudcontrol.com/
