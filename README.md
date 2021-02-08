@@ -13,8 +13,8 @@ MySQL is an open source relational database management system. AppZ currently of
 
 This stack creates MySQL Database using Gitops.
 
-### What is Gitops?
-[Gitops](https://www.ecloudcontrol.com/category/gitops/)
+### What is GitOps?
+[GitOps](https://www.ecloudcontrol.com/category/gitops/)
 
 ## Documentation: How to use MySQL stack
 [MySQL](https://docs.ecloudcontrol.com/mysql-5.7/)
