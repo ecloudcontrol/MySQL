@@ -1,7 +1,7 @@
     app:
         name: MySQL
         code: mysql
-        notify: appzdev@cloudbourne.co
+        notify: nanimineni@ecloudcontrol.com
 
     build:
         version: 5.7
@@ -11,7 +11,7 @@
         image_template: mysql-5.7
 
     deploy:
-        context: alpha/DEV
+        context: nageshaniminedi/DEV
         type: statefulset
         replicas: 1
         port:
