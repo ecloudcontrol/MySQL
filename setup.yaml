@@ -23,4 +23,4 @@ restore:
        file: sql/accountdb.sql
     user: root
     password: $MYSQL_ROOT_PASSWORD_KEY  # password of the 'user' above.
-    token: 20210323-1153  # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
+    token: 20210324-1134  # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
