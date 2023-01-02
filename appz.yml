@@ -5,13 +5,13 @@
 
     build:
         version: 5.7
-        env: DEV
+        env: PROD
         build_file: none
         output_files: output/*.zip
         image_template: mysql-5.7
 
     deploy:
-        context: ecloudcontrol/DEV
+        context: ecloudcontrol/PROD
         type: statefulset
         replicas: 1
         ingress: none
@@ -35,4 +35,4 @@
           vault: MYSQL_TRACKER_PASSWORD
         MYSQL_ECLOUDCONTROL_PASSWORD:
           vault: MYSQL_ECLOUDCONTROL_PASSWORD
-        revision : 24
+        revision : 25
