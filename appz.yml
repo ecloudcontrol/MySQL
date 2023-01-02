@@ -22,11 +22,11 @@
       - claim: mysql-data
         mount: /var/lib/mysql
         name: data
-        size: 100Gi
+        size: 250Gi
       - claim: mysql-backup
         mount: /appz/backup
         name: backup
-        size: 100Gi
+        size: 250Gi
 
     properties:
         MYSQL_ROOT_PASSWORD:
