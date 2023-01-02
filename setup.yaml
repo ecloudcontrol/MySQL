@@ -1,4 +1,3 @@
-
 users:
   - name: tracker
     password: $MYSQL_TRACKER_PASSWORD
