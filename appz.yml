@@ -35,4 +35,4 @@
           vault: MYSQL_TRACKER_PASSWORD
         MYSQL_ECLOUDCONTROL_PASSWORD:
           vault: MYSQL_ECLOUDCONTROL_PASSWORD
-        revision : 26
+        revision : 27
