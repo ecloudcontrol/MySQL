@@ -5,13 +5,13 @@
 
     build:
         version: 5.7
-        env: PROD
+        env: DEV
         build_file: none
         output_files: output/*.zip
         image_template: mysql-5.7
 
     deploy:
-        context: ecloudcontrol/PROD
+        context: ecloudcontrol/DEV
         type: statefulset
         replicas: 1
         ingress: none
