@@ -14,6 +14,7 @@
         context: ecloudcontrol/PROD
         type: statefulset
         replicas: 1
+        resources: x-large
         ingress: none
         port:
         - 3306
