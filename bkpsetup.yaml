@@ -1,7 +1,7 @@
 users:
-  - name: tracker
+  - name: web_client
     password: $MYSQL_MYDB_PASSWORD
-  - name: ecloudcontrol_com
+  - name: 
     password: $MYSQL_BARS_PASSWORD
     
 databases:
@@ -10,7 +10,7 @@ databases:
   
 acl:
   - database: mydb
-    user: mydb
+    user: web_client
     access: ALL
   - database: bars
     user: bars
