@@ -1,8 +1,6 @@
 users:
   - name: web_client
     password: $MYSQL_MYDB_PASSWORD
-  - name: 
-    password: $MYSQL_BARS_PASSWORD
     
 databases:
   - name: mydb
@@ -13,5 +11,5 @@ acl:
     user: web_client
     access: ALL
   - database: bars
-    user: bars
+    user: web_client
     access: ALL
