@@ -8,7 +8,7 @@
         env: DEV
         build_file: none
         output_files: output/*.zip
-        image_template: mysql-8.0_master
+        image_template: mysql_master-8.0
 
     deploy:
         context: tradeideas/DEV
