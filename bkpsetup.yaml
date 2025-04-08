@@ -1,17 +1,17 @@
 users:
   - name: tracker
-    password: $MYSQL_TRACKER_PASSWORD
+    password: $MYSQL_MYDB_PASSWORD
   - name: ecloudcontrol_com
-    password: $MYSQL_ECLOUDCONTROL_PASSWORD
+    password: $MYSQL_BARS_PASSWORD
     
 databases:
-  - name: tracker
-  - name: ecloudcontrol_com_v3
+  - name: mydb
+  - name: bars
   
 acl:
-  - database: tracker
-    user: tracker
+  - database: mydb
+    user: mydb
     access: ALL
-  - database: ecloudcontrol_com_v3
-    user: ecloudcontrol_com
+  - database: bars
+    user: bars
     access: ALL
