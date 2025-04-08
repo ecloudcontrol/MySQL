@@ -4,14 +4,14 @@
         notify: appzdev@cloudbourne.co
 
     build:
-        version: 5.7
-        env: PROD
+        version: 8.0
+        env: DEV
         build_file: none
         output_files: output/*.zip
         image_template: mysql-8.0_master
 
     deploy:
-        context: ecloudcontrol/PROD
+        context: tradeideas/DEV
         type: statefulset
         replicas: 1
         ingress: none
