@@ -39,4 +39,4 @@
           vault: MYSQL_MYDB_PASSWORD
         MYSQL_ECLOUDCONTROL_PASSWORD:
           vault: MYSQL_BARS_PASSWORD
-        revision : 11
+        revision : 12
