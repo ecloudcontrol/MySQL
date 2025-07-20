@@ -39,4 +39,6 @@
           vault: MYSQL_MYDB_PASSWORD
         MYSQL_ECLOUDCONTROL_PASSWORD:
           vault: MYSQL_BARS_PASSWORD
+        BACKUP_RETENTION: "3"
+        BINLOG_EXPIRE_LOGS_SECONDS: "259200"  
         revision : 12
