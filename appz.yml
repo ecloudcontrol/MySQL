@@ -39,6 +39,7 @@
           vault: MYSQL_MYDB_PASSWORD
         MYSQL_ECLOUDCONTROL_PASSWORD:
           vault: MYSQL_BARS_PASSWORD
-        ENV+=' -e BACKUP_RETENTION=3'
-        ENV+=' -e BINLOG_EXPIRE_LOGS_SECONDS=259200'
+        ENV:
+          - "-e BACKUP_RETENTION=3"
+          - "-e BINLOG_EXPIRE_LOGS_SECONDS=259200"
         revision : 12
