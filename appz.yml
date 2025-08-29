@@ -41,4 +41,4 @@
           vault: MYSQL_BARS_PASSWORD
         BACKUP_RETENTION: 1
         BINLOG_EXPIRE_LOGS_SECONDS: 86400
-        revision : 8
+        revision : 9
