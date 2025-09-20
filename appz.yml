@@ -4,7 +4,7 @@
         notify: appzdev@cloudbourne.co
 
     build:
-        version: 5.7
+        version: 8.0
         env: PROD
         build_file: none
         output_files: output/*.zip
