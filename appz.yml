@@ -5,13 +5,13 @@
 
     build:
         version: 8.0
-        env: DEV
+        env: PROD
         build_file: none
         output_files: output/*.zip
         image_template: mysql_master-8.0
 
     deploy:
-        context: tradeideas/DEV
+        context: tipreprod/PROD
         type: statefulset
         replicas: 1
         #ingress: none
