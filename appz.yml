@@ -34,9 +34,9 @@
           vault: AKAMAI_ACCESS_KEY
         AKAMAI_SECRET_KEY: 
           vault: AKAMAI_SECRET_KEY
-        AKAMAI_BUCKET: mysql-backup'        
-        AKAMAI_ENDPOINT: https://s3url'
-        AKAMAI_REGION: us-east-1'
+        AKAMAI_BUCKET: mysql-backup        
+        AKAMAI_ENDPOINT: https://us-iad-10.linodeobjects.com
+        AKAMAI_REGION: us-east-1
         MYSQL_ROOT_PASSWORD:
           vault: MYSQL_ROOT_PASSWORD_KEY
         MYSQL_REPLICATION_USER: replication
