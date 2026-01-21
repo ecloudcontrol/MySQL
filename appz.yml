@@ -52,5 +52,5 @@
         AKAMAI_ENDPOINT: https://us-iad-10.linodeobjects.com
         AKAMAI_REGION: us-iad-10
         BACKUP_RETENTION: 1
-        revision : 18
+        revision : 1
      
