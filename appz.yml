@@ -19,6 +19,13 @@
         port:
         - 3306
         - 9104
+    nodeSelector:
+      nodepool: mysql
+    tolerations:
+      - key: nodepool
+        operator: Equal
+        value: mysql
+        effect: NoSchedule
     volumes:
       - claim: mysql-data
         class: linode-block-storage
